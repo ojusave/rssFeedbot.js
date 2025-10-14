@@ -66,4 +66,4 @@ The application will start running and fetch the RSS feed every 30 minutes, post
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
