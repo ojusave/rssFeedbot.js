@@ -21,7 +21,7 @@ git clone https://github.com/your-repo/rss-feed-zoom-bot.git
 
 2. Install dependencies:
 ```
-cd rss-feed-zoom-bot npm install
+cd rss-feed-zoom-bot && npm install
 ```
 
 3. Create a `.env` file in the project root directory and add the following environment variables:
