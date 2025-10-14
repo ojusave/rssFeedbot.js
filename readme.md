@@ -14,15 +14,18 @@ The bot is highly configurable, allowing you to specify the RSS feed URL, Zoom c
 ## Setup
 
 1. Clone the repository:
-
+   
+```
 git clone https://github.com/your-repo/rss-feed-zoom-bot.git
+```
 
 2. Install dependencies:
-
+```
 cd rss-feed-zoom-bot npm install
+```
 
 3. Create a `.env` file in the project root directory and add the following environment variables:
-
+```
 PORT=4000  
   
 RSS_FEED_URL=https://example.com/rss  
@@ -37,23 +40,29 @@ ZOOM_CLIENT_ID=your_zoom_client_id
   
 ZOOM_CLIENT_SECRET=your_zoom_client_secret
 
+```
+
 You can obtain the Zoom credentials by following the instructions in the [Zoom Chatbot Documentation](https://developers.zoom.us/docs/team-chat-apps/create/).
 
 4. Start the application:
 
+```
 npm start
+```
 
 The application will start running and fetch the RSS feed every 30 minutes, posting new items to the specified Zoom chat channel or user.
 
 ## Configuration
+| Variable Name         | Description                                                        | Default Value |
+|------------------------|--------------------------------------------------------------------|----------------|
+| `PORT`                 | The port on which the Express server will listen.                  | `4000`         |
+| `RSS_FEED_URL`         | The URL of the RSS feed to fetch.                                  | —              |
+| `ZOOM_BOT_JID`         | The JID (Jabber ID) of your Zoom chatbot.                          | —              |
+| `ZOOM_TO_JID`          | The JID of the Zoom chat channel or user to send messages to.      | —              |
+| `ZOOM_USER_JID`        | Your Zoom user JID.                                                | —              |
+| `ZOOM_CLIENT_ID`       | Your Zoom client ID.                                               | —              |
+| `ZOOM_CLIENT_SECRET`   | Your Zoom client secret.                                           | —              |
 
-- `PORT`: The port on which the Express server will listen (default: 4000).
-- `RSS_FEED_URL`: The URL of the RSS feed to fetch.
-- `ZOOM_BOT_JID`: The JID (Jabber ID) of your Zoom chatbot.
-- `ZOOM_TO_JID`: The JID of the Zoom chat channel or user to send the messages to.
-- `ZOOM_USER_JID`: Your Zoom user JID.
-- `ZOOM_CLIENT_ID`: Your Zoom client ID.
-- `ZOOM_CLIENT_SECRET`: Your Zoom client secret.
 
 ## License
 
