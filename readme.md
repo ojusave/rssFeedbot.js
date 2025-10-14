@@ -55,7 +55,7 @@ ZOOM_CLIENT_SECRET=your_zoom_client_secret
 
 ---
 
-## Running the bot
+## Run
 
 Start the application:
 
